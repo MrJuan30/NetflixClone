@@ -1,15 +1,4 @@
-Link de la API:
+# NetflxClone
 
-Utilice para crear CSS sin tailwind
 
-@layer base {
-h1 {
-font-size: 200px;
-}
-}
-
-que mas pongo?
-
-si
-
-saludos
+Netflix Clone made with React Js, React Router Dom, React Icons, Axios, Css, Vainilla JavaScript and Firebase
