@@ -14,5 +14,5 @@ module.exports = {
       raleway: ["Raleway"] /*SubTitulos*/,
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar-hide")],
 };
