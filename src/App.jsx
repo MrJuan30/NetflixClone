@@ -3,7 +3,7 @@ import './App.css'
 import { Routes, Route } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import NavBar from './Components/NavBar/NavBar';
-import Home from './Components/Home/Home';
+import HomePage from './Components/HomePage';
 
 function App() {
   /*SE UTILIZA PARA QUE CUANDO SE CAMBIE DE RUTA INICIE DESDE LA PARTE DE ARRIBA*/
@@ -19,7 +19,7 @@ function App() {
     <div className="App">
       <NavBar />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<HomePage />} />
       </Routes>
     </div>
   )
