@@ -1,9 +1,13 @@
-import { useState, useEffect } from 'react'
+import { useEffect } from 'react'
 import './App.css'
 import { Routes, Route } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import NavBar from './Components/NavBar/NavBar';
 import HomePage from './Components/HomePage';
+import { AuthContextProvider } from './context/AuthContext';
+import Login from './Components/Login/Login';
+import Signup from './Components/Signup/Signup';
+import Account from './Components/Account/Account';
 
 function App() {
   /*SE UTILIZA PARA QUE CUANDO SE CAMBIE DE RUTA INICIE DESDE LA PARTE DE ARRIBA*/
@@ -16,12 +20,18 @@ function App() {
   }, [routePath]);
 
   return (
-    <div className="App">
-      <NavBar />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-      </Routes>
-    </div>
+    <>
+      <AuthContextProvider>
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path='/login' element={<Login />}/>
+          <Route path='/signup' element={<Signup />}/>
+          <Route path='/account' element={<Account />}/>
+        </Routes>  
+      </AuthContextProvider>
+      
+    </>
   )
 }
 

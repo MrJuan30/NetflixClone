@@ -6,7 +6,8 @@ module.exports = {
       "primary-red": "#e50914",
       "primary-black": "#141010",
       "primary-white": "#f8f3e6",
-      "primary-gray": "#232323",
+      "primary-gray": "#3b3b3b",
+      "seconday-gray": "#525252",
       "seconday-red": "#b81d24",
     },
     fontFamily: {
