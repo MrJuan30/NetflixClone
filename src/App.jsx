@@ -8,6 +8,7 @@ import { AuthContextProvider } from './context/AuthContext';
 import Login from './Components/Login/Login';
 import Signup from './Components/Signup/Signup';
 import Account from './Components/Account/Account';
+import ProtectedRoute from './Components/ProtectedRoute/ProtectedRoute';
 
 function App() {
   /*SE UTILIZA PARA QUE CUANDO SE CAMBIE DE RUTA INICIE DESDE LA PARTE DE ARRIBA*/
@@ -27,7 +28,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path='/login' element={<Login />}/>
           <Route path='/signup' element={<Signup />}/>
-          <Route path='/account' element={<Account />}/>
+          <Route path='/account' element={<ProtectedRoute><Account /></ProtectedRoute>}/>
         </Routes>  
       </AuthContextProvider>
       

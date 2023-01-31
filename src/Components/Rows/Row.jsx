@@ -14,7 +14,6 @@ const Row = ({ title, fetchURL, rowID }) => {
                 setMovies(response.data.results)
             })
             .catch((err) => console.log(err))
-        console.log(Movies)
     }, [fetchURL])
 
     const slideLeft = () => {
