@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { FaRegHeart, FaHeart } from 'react-icons/fa'
 import { UserAuth } from '../../context/AuthContext'
-import { db } from '../../firebase'
+import { db } from '../../firebase.config'
 import { arrayUnion, doc, updateDoc } from 'firebase/firestore'
 import { async } from '@firebase/util'
 
