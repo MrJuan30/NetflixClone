@@ -3,7 +3,6 @@ import { FaRegHeart, FaHeart } from 'react-icons/fa'
 import { UserAuth } from '../../context/AuthContext'
 import { db } from '../../firebase.config'
 import { arrayUnion, doc, updateDoc } from 'firebase/firestore'
-import { async } from '@firebase/util'
 
 const Movie = ({ item }) => {
     const [Like, setLike] = useState(true)
